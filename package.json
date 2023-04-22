@@ -11,8 +11,12 @@
     "build": "parcel build --no-source-maps index.html --public-url ./"
   },
   "keywords": [],
-  "author": "José Compadre Junior",
+  "author": "compadrejunior",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/compadrejunior/logseq-template-button.git"
+  },
   "dependencies": {
     "@logseq/libs": "0.0.1-alpha.34"
   },
