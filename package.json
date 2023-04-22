@@ -1,7 +1,7 @@
 {
-  "name": "logseq-starter-plugin",
+  "name": "logseq-template-button",
   "version": "1.0",
-  "description": "Starter Plugin",
+  "description": "Logseq plugin that helps creating a template button to insert new pages from a given template.",
   "main": "dist/index.html",
   "targets": {
     "main": false
@@ -11,14 +11,14 @@
     "build": "parcel build --no-source-maps index.html --public-url ./"
   },
   "keywords": [],
-  "author": "Aryan Sawhney",
+  "author": "José Compadre Junior",
   "license": "MIT",
   "dependencies": {
     "@logseq/libs": "0.0.1-alpha.34"
   },
   "logseq": {
-    "id": "logseq-starter-plugin",
-    "title": "logseq-starter-plugin",
+    "id": "logseq-template-button",
+    "title": "Template Button",
     "icon": "./icon.png"
   },
   "devDependencies": {
