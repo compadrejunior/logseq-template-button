@@ -25,8 +25,4 @@ Logseq plugin that helps creating a template button to insert new pages from a g
    ![Load unpacked plugin](assets/plugins-screen.png)
 
 
-4. Select the dist folder inside your project folder.
-
-
-
-5. 
+4. Select the root of your project folder. You will see the plugin in the list.
