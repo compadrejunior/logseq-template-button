@@ -13,11 +13,30 @@ const stylesheet = `
   }
 `;
 
+const loadTemplates = async () => {
+  let templates;
+  try {
+    templates = await logseq.DB.datascriptQuery(`
+      [:find ?b (distinct ?value)
+      :where
+        [?b :block/properties ?prop]
+        [(get ?prop :template) ?value] 
+      ]`);
+  } catch (e) {
+    console.error(e);
+  }
+  return templates;
+};
+
 const main = async () => {
   // Register stylesheet
   logseq.provideStyle(stylesheet);
 
   console.log('Template Button plugin loaded');
+
+  // Retrieve templates
+  const templates = await loadTemplates();
+  console.log(`templates: ${JSON.stringify(templates)}`);
 
   // Register slash command to add the renderer code
   logseq.Editor.registerSlashCommand('Insert Template Button', async () => {
