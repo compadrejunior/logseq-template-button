@@ -19,7 +19,7 @@
     "url": "https://github.com/compadrejunior/logseq-template-button.git"
   },
   "dependencies": {
-    "@logseq/libs": "0.0.1-alpha.34"
+    "@logseq/libs": "0.0.14"
   },
   "logseq": {
     "id": "logseq-template-button",
